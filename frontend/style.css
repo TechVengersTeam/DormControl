@@ -306,52 +306,6 @@ a {
   color: aliceblue;
   box-shadow: 2px 1px 8px 0 gray;
 }
-
-
-#testimonial {
- 
-  background-image: linear-gradient(to right, #7189b3c8, #b3c2ddc8);
-  min-height: 31.25rem;
-}
-.testimonial {
-  width: 90%;
-  margin: auto;
-}
-.testimonial-h2 {
-  margin-top: 0;
-}
-.carousel {
-  /* width: 60%; */
-  margin: 3rem auto 2rem;
-}
-.carousel-inner {
-  margin: auto;
-  padding-bottom: 0.625rem;
-}
-.carousel-item p {
-  margin-top: 3.125rem;
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: aliceblue;
-  
-  position: relative;
-  z-index: 1;
-  text-align: center;
- 
-  font-family: "Fredoka", sans-serif;
-}
-.carousel-item p i {
-  position: absolute;
-  bottom: -1.875rem;
-  right: 1.25rem;
-  color: #ecf9ff75;
-  
-  z-index: -1;
-}
-
-.carousel-item i {
-  font-size: 4.0625rem;
-}
 .name {
   margin-bottom: 0%;
   color: #2c3951;
