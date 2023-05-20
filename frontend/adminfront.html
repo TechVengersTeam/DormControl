@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin</title>
-    <!-- link css  -->
+    <title>Admin Home Page</title>
+   
     <link rel="stylesheet" href="admin.css">
 
-    <!-- link boxicon  -->
+    
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- font awesome  -->
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -24,7 +24,7 @@
 
 
     <div class="header">
-        <h2 class="hostel-title">Hostel Managemant System</h2>
+        <h2 class="hostel-title">CV RAMAN</h2>
 
         <i class="fa-solid fa-bars " id="ham-menu"></i>
         <ul id="nav-bar-links">
@@ -64,10 +64,9 @@
 
 
             <ul class="login-link">
-                <li>Student-details</li>
-                <li>Student Atendence</li>
+                <li>Student Details</li>
                 <li>
-                    <form action="/gatepass" method="get">
+                    <form action="gatepassdetails.html" method="get">
                         <button type="submit" class="logout-btn">Student Check Detail</button>
                     </form>
                 </li>
@@ -78,9 +77,7 @@
                 <a href="/complaints">
                     <li>Complaints</li>
                 </a>
-                <a href="/changepwd">
-                    <li>Change Password</li>
-                </a>
+               
                 <a href="/">
                     <li>Log out</li>
                 </a>
@@ -107,7 +104,7 @@
                 <div class="student-details">
                     <div class="s-d-name">
                         <h4 class="s-name-tital detail-title">Name: </h4>
-                        <span class="s-name-value detail-value"><%=adminData.name%></span>
+                        <span class="s-name-value detail-value">Nagesh Tiwari</span>
                     </div>
 
 
@@ -115,20 +112,20 @@
 
                 <div class="s-d-name">
                     <h4 class=" detail-title">Email:</h4>
-                    <span class=" detail-value"><%=adminData.email%></span>
+                    <span class=" detail-value">nagesh.XXXXX@kiet.edu</span>
                 </div>
                 <div class="s-d-name">
                     <h4 class=" detail-title">Position:</h4>
-                    <span class=" detail-value"><%=adminData.position%></span>
+                    <span class=" detail-value">Warden</span>
                 </div>
 
                 <div class="s-d-name">
                     <h4 class=" detail-title">Address: </h4>
-                    <span class=" detail-value"><%=adminData.address%></span>
+                    <span class=" detail-value">Jaunpur</span>
                 </div>
                 <div class="s-d-name">
                     <h4 class=" detail-title">Mobile No.: </h4>
-                    <span class=" detail-value"><%=adminData.mobileNo%></span>
+                    <span class=" detail-value">7989XXXXXX</span>
                 </div>
 
 
