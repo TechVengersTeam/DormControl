@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="s-dashboard.css" />
+
+   
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="header">
+      <a href="/"><h2 class="hostel-title">CV RAMAN</h2></a>
+
+      <i class="fa-solid fa-bars" id="ham-menu"></i>
+      <ul id="nav-bar-links">
+        <li>
+          <a href="dashboard.html">Dashboard</a>
+        </li>
+       
+        <li>
+          <a href="check-in-out.html">Check-in-out</a>
+        </li>
+        <li>
+          <a href="#">Fees Payment</a>
+        </li>
+        <li>
+          <a href="mess.html">Mess Menu</a>
+        </li>
+        <li>
+          <a href="complaints.html">Complaints</a>
+        </li>
+        
+        <li>
+          <form action="/logout" method="post">
+            <button type="submit">Logout</button>
+          </form>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container-main">
+      <div class="container-nav">
+        <ul class="login-link">
+         
+          <li>
+            <form action="dashboard.html" method="get">
+              <button type="submit" class="logout-btn">Dashboard</button>
+            </form>
+          </li>
+          <li>
+            <form action="check-in-out.html" method="get">
+              <button type="submit" class="logout-btn">Check in-out</button>
+            </form>
+          </li>
+          <li>Fees payment</li>
+          <li>
+            <form action="mess.html" method="get">
+              <button type="submit" class="logout-btn">Mess Menu</button>
+            </form>
+          </li>
+          <a href="complaints.html"><li>Complaint</li></a>
+          
+          <li>
+            <form action="login.html" method="post">
+              <button class="logout-btn" type="submit">Logout</button>
+            </form>
+          </li>
+        </ul>
+      </div>
+      <div class="container-details">
+        <div class="student-photo-details">
+          <div class="dev-text-img">
+            <div class="dashboard_name">
+              <h2>
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+              </h2>
+            </div>
+          </div>
+
+          <div class="student-details">
+            <div class="s-d-name">
+              <h4 class="s-name-tital detail-title">Name:</h4>
+              <span class="s-name-value detail-value">Aryan Rajpoot</span>
+            </div>
+
+            <div class="s-d-name">
+              <h4 class="detail-title">Library ID:</h4>
+              <span class="detail-value">2226XXXXXX</span>
+            </div>
+
+            <div class="s-d-name">
+              <h4 class="detail-title">Course:</h4>
+              <span class="detail-value">B Tech</span>
+            </div>
+
+            <div class="s-d-name">
+              <h4 class="detail-title">Semester:</h4>
+              <span class="detail-value">II <sup>nd</sup></span>
+            </div>
+
+           
+
+            <div class="s-d-name">
+              <h4 class="detail-title">Email:</h4>
+              <span class="detail-value">aryan.222XXXXX@kiet.edu</span>
+            </div>
+
+            <div class="s-d-name">
+              <h4 class="detail-title">Mobile No:</h4>
+              <span class="detail-value">798380XXXX</span>
+            </div>
+
+            <div class="s-d-name">
+              <h4 class="detail-title">Room No:</h4>
+              <span class="detail-value">807</span>
+            </div>
+
+            <div class="s-d-name">
+              <h4 class="detail-title">Guardian Name:</h4>
+              <span class="detail-value">Father Name</span>
+            </div>
+
+            <div class="s-d-name">
+              <h4 class="detail-title">Guardian Mobile no:</h4>
+              <span class="detail-value">790XXXXXXX</span>
+            </div>
+
+            <div class="s-d-name">
+              <h4 class="detail-title">Address:</h4>
+              <span class="detail-value">ETAH</span>
+            </div>
+
+            
+        </div>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
