@@ -23,4 +23,11 @@ urlpatterns = [
     path('login/', views.studentLogin, name='studentLogin'),
     path('logout/', views.logout_view, name='logoutview'),
     path('adminLogin/', views.adminLogin, name='adminLogin'),
+    path('dashboard/', views.dashboard, name='dashboard'),
+    path('download/', views.download_file),
+    path('mess/', views.mess, name='mess'),
+    path('adminfront/', views.adminfront, name='adminfront'),
+    path('complaints/', views.complaints, name='complaints'),
+    path('checkInOut/', views.checkInOut, name='checkInOut  '),
+    path('gatepassdetails/', views.gatepassdetails, name='gatepassdetails  '),
 ]

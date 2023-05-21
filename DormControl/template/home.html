@@ -118,8 +118,16 @@
           <p>
             Living independent might come as appalling as the word to anyone but me the one who thinks it's a cool idea and worth it, has sure forgotten that independence comes with a price. If one doesn't still agree, you gotta try staying at a hostel.
           </p>
-          
-          <button class="button button-apply"><a href="/register" id="change">Apply Now </a></button>
+          {% if user.is_authenticated %}
+          {% if user.is_staff == False %}
+          <button class="button button-apply"><a href="/dashboard" id="change">Dashboard </a></button>
+          {% else %}
+          <button class="button button-apply"><a href="/register" id="change">Apply Now </a></button> 
+          <!-- admin  -->
+          {% endif %}
+          {% else %}
+          <button class="button button-apply"><a href="/register" id="change">Apply Now </a></button> 
+          {% endif %}
         </div>
         <div class="hero-right">
           <img class="hostel-illu" src="{% static 'img/home3.jpg' %}" alt="" />
