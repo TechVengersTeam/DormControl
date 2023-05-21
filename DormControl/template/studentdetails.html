@@ -41,30 +41,27 @@
 <body>
     <div class="getpass-entry">
     <table  cellspacing="2" id="entry-table">
-        <h2>GATE-PASS REQUEST:</h2>
+        <h2>Student Details:</h2>
        
         <tr ID="heading">
-            <th>ENROLLMENT NO.</th>
-            <th>TYPE</th>
-            <th>START-DATE</th>
-            <th>END-DATE</th>
-            <th>OUT-TIME</th>
-            <th>IN-TIME</th>
+            <th>Name</th>
+            <th>E-Mail</th>
+           
+            
             
         </tr>
-        {% for gatepass in allpass %}
+            {% for users in allusers %}
+            {% if users.is_staff == False %}
         <tr>
-            <td>{{gatepass.libid}}</td>
-            <td>{{gatepass.stype}}</td>
-            <td>{{gatepass.startdate}}</td>
-            <td>{{gatepass.enddate}}</td>
-            <td>{{gatepass.outtime}}</td>
-            <td>{{gatepass.intime}}</td>
+            <td>{{ users.first_name }}</td>
+            <td>{{ users.email }}</td>
+            
+            
 
         </tr>
+        {% endif %}
         {% endfor %}
     </table>
-    <!-- {{allpass}} -->
 </div>
 </body>
 </html>

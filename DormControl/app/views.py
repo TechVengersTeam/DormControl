@@ -6,6 +6,8 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.contrib.auth import logout
+from django.contrib.auth import get_user_model
+from .models import GatePass
 
 # Import mimetypes module
 import mimetypes
@@ -147,6 +149,29 @@ def checkInOut(request):
 @login_required
 def gatepassdetails(request):
     if request.user.is_staff:
-        return render(request, 'gatepassdetails.html')
+        all_pass= GatePass.objects.all()
+    
+        context= {'allpass': all_pass}
+        return render(request, 'gatepassdetails.html', context=context)
+    else:
+        return redirect("/")
+
+
+@login_required
+def complaintsdetails(request):
+    if request.user.is_staff:
+        return render(request, 'complaintsdetails.html')
+    else:
+        return redirect("/")
+
+
+@login_required
+def studentdetails(request):
+    if request.user.is_staff:
+        all_users= get_user_model().objects.all()
+    
+        context= {'allusers': all_users}
+        
+        return render(request, 'studentdetails.html', context)
     else:
         return redirect("/")

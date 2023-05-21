@@ -29,5 +29,7 @@ urlpatterns = [
     path('adminfront/', views.adminfront, name='adminfront'),
     path('complaints/', views.complaints, name='complaints'),
     path('checkInOut/', views.checkInOut, name='checkInOut  '),
-    path('gatepassdetails/', views.gatepassdetails, name='gatepassdetails  '),
+    path('gatepassdetails/', views.gatepassdetails, name='gatepassdetails'),
+    path('complaintsdetails/', views.complaintsdetails, name='complaintsdetails'),
+    path('studentdetails/', views.studentdetails, name='studentdetails'),
 ]
