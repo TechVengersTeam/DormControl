@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/register.css' %}" />
+
+    <link href="" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="header">
+      <a href="/"><h2 class="hostel-title">Welcome To CV Raman</h2></a>
+    </div>
+
+    <div class="container">
+      <div class="container-nav">
+        <ul class="login-link">
+          <!-- <li>
+            <i class="bx bx-user-plus"></i
+            ><a href="#">Register as Student</a>
+          </li> -->
+          <li>
+            <i class="bx bx-group"></i><a href="/login">Login as student</a>
+          </li>
+          <li>
+            <i class="bx bxs-user"></i><a href="adminLogin.html">Login as admin</a>
+          </li>
+        </ul>
+      </div>
+      <div class="container-registration-form">
+        <form class="registration-form" action="{% url 'register' %}" method="post">
+          {% csrf_token %}
+          <h3>Student Registration</h3>
+          <label for="libid">Library ID:</label>
+          <input
+            id="libid"
+            type="number"
+            name="libid"
+            placeholder="Enter Library ID"
+            required
+            autocomplete="off"
+            autofocus
+          />
+          <br />
+
+          <label for="email">E-mail Id:</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Enter E-mail"
+            required
+            autocomplete="off"
+            autofocus
+          /><br />
+
+          <label for="name">Student Full Name:</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            required
+            autocomplete="off"
+          /><br />
+
+          <label for="course">Course:</label>
+          <input
+            id="course"
+            type="text"
+            name="course"
+            placeholder="Course"
+            required
+            autocomplete="off"
+          />
+          <br />
+
+          <label for="branch">Branch:</label>
+          <input
+            id="branch"
+            type="text"
+            name="branch"
+            placeholder="Branch"
+            required
+            autocomplete="off"
+          />
+          <br />
+
+          <label for="year">Current Year</label>
+          <select name="year" id="year">
+            <option value="">Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option></select
+          ><br />
+
+          <label for="phone">Student Contact No:</label>
+          <input
+            id="phone"
+            type="tel"
+            name="phone"
+            placeholder="Contact no"
+            required
+            autocomplete="off"
+          />
+          <br />
+
+          <label for="address">Address:</label>
+          <input
+            id="address"
+            type="text"
+            name="address"
+            placeholder="Address"
+            required
+            autocomplete="off"
+          /><br />
+
+          <label for="password">Set Password:</label>
+          <input type="password" id="password" name="password" />
+          <br />
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
