@@ -4,3 +4,6 @@ A fundamental model of Request Management ,where higher authority can examine lo
 
 admin login: ayush@ayush.com
 password: hackathon
+To run, go to DormControl and
+`python manage.py runserver`
+Remember django should be installed
