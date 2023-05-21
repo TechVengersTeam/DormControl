@@ -47,53 +47,40 @@
 
       <div class="container-form">
         <div class="container-form-inner">
-          <form action="/check" method="post">
+          <form action="/checkInOut" method="POST">
             <h3 class="apply">APPLY FOR GATE PASS:</h3>
             <div class="undermain">
               <div class="sidediv">
                 <label for="username">Library ID :</label>
-                <input type="text" name="username" id="username" required />
+                <input type="text" name="libid" id="libid" required />
               </div>
             </div>
             <div class="undermain">
               <div class="sidediv">
                 
-                <label for="type">Select Type:</label>
-                <select name="type" id="type" required>
-                  <option value="">Select</option>
-                  <option value="LEAVE">Leave</option>
-                  <option value="Gate-pass">Gate pass</option>
-                </select>
+                <label for="stype">Select Type:</label>
+                <input type="text" name="stype" id="stype" required />
               </div>
               <div class="sidediv">
                 <label for="reason">Reason:</label>
-                <select name="reason" id="reason" required>
-                  <option value="">Select</option>
-                  <option value="shopping">Visiting Home</option>
-                  <option value="relative">Relative meeting</option>
-                  
-                  <option value="medical">Medical</option>
-                
-                  <option value="exam">Exam</option>
-                  <option value="other">Other</option>
-                </select>
+                <input type="text" name="reason" id="reason" required />
               </div>
             </div>
 
             <div class="undermain">
               <div class="sidediv">
-                <label for="start-date">Start-date:</label>
-                <input type="date" name="Sdate" id="start-date" required />
+                <label for="startdate">Start-date:</label>
+                <input type="date" name="startdate" id="startdate" required />
               </div>
               <div class="sidediv">
-                <label for="end-date">End-date:</label>
-                <input type="date" name="Edate" id="end-date" required />
+                <label for="enddate">End-date:</label>
+                <input type="date" name="enddate" id="enddate" required />
               </div>
             </div>
             <div class="undermain">
               <div class="sidediv">
                 <label for="intime">In-time:</label>
-                <input type="time" name="intime" required />
+                <input type="time" name="intime" id="intime" required />
               </div>
               <div class="sidediv">
                 <label for="outtime">Out-time:</label>
@@ -101,7 +88,7 @@
               </div>
             </div>
             <div class="submit">
-              <button class="submit-btn">Apply</button>
+              <button class="submit-btn" type="submit">Apply</button>
             </div>
           </form>
         </div>
